@@ -1,0 +1,6 @@
+GraphicsWindow.PenColor="green"
+GraphicsWindow.DrawRectangle(100,70,50,200)
+
+GraphicsWindow.BrushColor="green"
+GraphicsWindow.FillRectangle(200,70,50,200)
+

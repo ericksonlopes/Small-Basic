@@ -1,0 +1,11 @@
+TextWindow.WriteLine("Escreva a senha:")
+senha =10
+numero = TextWindow.Read()
+While numero <> senha
+  TextWindow.WriteLine("Senha errada")
+  TextWindow.WriteLine("digite a senha")
+  numero = TextWindow.Read()
+EndWhile
+If numero = senha Then
+  TextWindow.WriteLine("Correto")
+EndIf

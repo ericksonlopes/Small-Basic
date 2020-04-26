@@ -1,0 +1,41 @@
+GraphicsWindow.MouseDown = mouseD
+GraphicsWindow.MouseMove = mouseM
+Turtle.Show()
+Sub mouseD
+  x = GraphicsWindow.MouseX
+  y = GraphicsWindow.MouseY
+  
+If (Mouse.IsLeftButtonDown)then
+  Turtle.X = x
+  Turtle.Y = y
+  
+  Turtle.PenDown()
+EndIf
+
+if(Mouse.IsRightButtonDown) Then
+  
+  Turtle.MoveTo(x,y)
+EndIf
+
+EndSub
+
+Sub mouseM
+  x = GraphicsWindow.MouseX
+  y = GraphicsWindow.MouseY
+  
+If (Mouse.IsLeftButtonDown)then
+  Turtle.X = x
+  Turtle.Y = y
+  
+  
+EndIf
+
+if(Mouse.IsRightButtonDown) Then
+  Turtle.X = x
+  Turtle.Y = y
+ 
+EndIf
+
+  EndSub
+  
+  

@@ -1,0 +1,8 @@
+GraphicsWindow.MouseDown = mouseC
+Sub mouseC
+  x = GraphicsWindow.MouseX
+  y = GraphicsWindow.MouseY
+  Turtle.MoveTo(x,y)
+  Turtle.PenUp()
+  
+  EndSub

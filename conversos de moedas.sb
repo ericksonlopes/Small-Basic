@@ -1,0 +1,9 @@
+TextWindow.WriteLine("Insira o valor em Dólar")
+valorDolar = TextWindow.Read()
+
+TextWindow.WriteLine("Insira cotação do dolar")
+cotacaoDolar = TextWindow.Read()
+
+
+valorReal = valorDolar/cotacaoDolar
+TextWindow.WriteLine("O valor em Real é R$"+valorReal)

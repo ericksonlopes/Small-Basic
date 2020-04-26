@@ -1,0 +1,19 @@
+TextWindow.WriteLine("Calcúlo de IMC(Índice de Massa Corpórea)")
+
+TextWindow.WriteLine("Digite seu peso:")
+peso = TextWindow.Read()
+
+TextWindow.WriteLine("Digite sua altura:")
+altura = TextWindow.Read()
+
+resultado = peso/(altura*altura)
+TextWindow.WriteLine("Seu IMC é:")
+TextWindow.WriteLine(resultado)
+
+If resultado < 18.5 Then
+  TextWindow.WriteLine("Voçê esta abaixo do seu peso normal!")
+ElseIf resultado > 25 then
+  TextWindow.WriteLine("Voçê esta acima do seu peso ideal!")
+Else
+  EndIf
+  TextWindow.WriteLine("VoÇê esta no seu peso ideal!")

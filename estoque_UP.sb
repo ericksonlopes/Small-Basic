@@ -1,0 +1,55 @@
+TextWindow.WriteLine("Digite a senha de acesso:")
+senha= "1122"
+numero = TextWindow.Read()
+tentativas = 0
+While numero <> senha And tentativas < 2
+  TextWindow.WriteLine("Senha incorreta")
+  TextWindow.WriteLine("Digite a senha novamente!")
+  numero = TextWindow.Read()
+  tentativas = tentativas + 1
+EndWhile  
+
+If numero = senha Then
+  
+  TextWindow.WriteLine("Senha correta!")
+  TextWindow.WriteLine(" ")
+  
+  TextWindow.WriteLine("Entre com o valor maximo do produto no estoque:")
+  maxEstoque = TextWindow.Read()
+
+  TextWindow.WriteLine("Entre com a quantidade de produto no estoque :")
+  estoque = TextWindow.Read()
+
+  If estoque <maxEstoque Then
+    TextWindow.WriteLine("Estoque muito baixo! Compre mais!")
+    repor = (estoque - maxEstoque) *-1 
+    
+    For contador =1 To repor
+      TextWindow.WriteLine("Qauntidade a repor :"+contador)
+    EndFor
+    
+    TextWindow.WriteLine("Reponha "+repor+" produtos no estoque ")
+  
+  Else
+    TextWindow.WriteLine("Estoque dentro dos níveis normais")
+    
+  EndIf
+  TextWindow.WriteLine("Digite a quantidade que ira repor agora no estoque")
+  reposicao = TextWindow.Read()
+  total = reposicao + estoque 
+  
+  While reposicao <> repor And reposicao < repor
+    TextWindow.WriteLine("Reponha a quantidade necessaria para a reposição")
+    
+    reposicao = TextWindow.Read()   
+    EndWhile
+    If reposicao = repor Then
+      TextWindow.WriteLine("O estoque esta dentro dos níveis normais")
+      EndIf
+Else
+  TextWindow.WriteLine("Excesso de tentativas")
+ 
+EndIf
+
+
+

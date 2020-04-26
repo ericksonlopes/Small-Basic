@@ -1,0 +1,27 @@
+TextWindow.WriteLine("Digite a quantidade maxima do estoque! ")
+estoque  = TextWindow.Read() 
+
+TextWindow.WriteLine("Lembre-se que 80% do estoque é aceitavel como normal") 
+
+porcentagem = 20
+conta = estoque*porcentagem/100
+conta2 = estoque - conta
+qnt_aceitavel = conta2
+
+
+TextWindow.WriteLine("Digite a quantidade do estoque no final do dia!")
+qnt_finalDia = TextWindow.Read()
+
+qnt_final = qnt_finalDia - estoque 
+
+qnt_repor = -qnt_final - (estoque-200)
+
+If qnt_final < estoque Then
+  TextWindow.WriteLine ("Estoque esta abaixo do aceitavel! reponha até "+qnt_repor+" para completar!")
+Else
+  TextWindow.WriteLine ("Estoque esta dentro dos níveis normais")
+EndIf
+
+If qnt_final > estoque Then
+  TextWindow.WriteLine ("estoque esta acima dos niveis normais venda os produtos! ")
+EndIf

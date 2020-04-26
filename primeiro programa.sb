@@ -1,0 +1,7 @@
+TextWindow.WriteLine("Olá, Mundo .Esse é um programa para somar valores inteiros.")
+TextWindow.WriteLine("Digite o Primeiro valor!")
+primeiro = TextWindow.Read()
+TextWindow.WriteLine("Digite o segundo valor!")
+segundo = TextWindow.Read()
+resultado = segundo + primeiro
+TextWindow.WriteLine("O resultado é: "+resultado)

@@ -1,0 +1,34 @@
+Sub inicio
+  TextWindow.WriteLine(Clock.Time)
+  TextWindow.WriteLine("Digite a quantidade do produto no estoque")
+  estoque = "A"
+  estoque = TextWindow.ReadNumber()
+
+TextWindow.Clear()
+EndSub
+
+inicio()
+
+Sub estoqueR
+  estoque = "A"
+  GraphicsWindow.Hide()
+  TextWindow.Clear()
+  inicio()
+EndSub
+
+While estoque <> "A"
+  If estoque < 10 then
+    GraphicsWindow.ShowMessage("O estoque esta abaixo dos niveis normais","Estoque")
+    estoqueR()
+  Else
+    GraphicsWindow.ShowMessage("O estoque esta dentre os níveis normais","Estoque")
+    estoqueR()
+  EndIf
+EndWhile
+
+
+
+
+
+
+  

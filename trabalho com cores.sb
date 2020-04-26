@@ -1,0 +1,6 @@
+GraphicsWindow.BrushColor="Red"
+GraphicsWindow.FillEllipse(100,80,100,100)
+
+GraphicsWindow.PenColor="Yellow"
+GraphicsWindow.PenWidth = 10
+GraphicsWindow.DrawRectangle(350,250,170,100)

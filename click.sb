@@ -1,0 +1,14 @@
+GraphicsWindow.MouseDown= QuandoClicarOMouse
+Sub QuandoClicarOMouse
+  GraphicsWindow.ShowMessage("Você clicou com o mouse","teste")
+EndSub
+
+GraphicsWindow.KeyDown= tecladoDown
+Sub tecladoDown
+  GraphicsWindow.ShowMessage("Você clicou com o teclado","teste")
+EndSub
+
+GraphicsWindow.KeyUp = tecladoUP
+Sub tecladoUP
+  GraphicsWindow.ShowMessage("Você soltou uma tecla","teste")
+  EndSub

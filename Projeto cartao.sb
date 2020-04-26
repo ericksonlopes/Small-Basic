@@ -1,0 +1,35 @@
+
+TextWindow.WriteLine("Cartão na mão")
+
+min = Clock.Minute
+hora = Clock.Hour
+senha = 1220
+
+Sub cartao
+  TextWindow.WriteLine("Faça seu registro !")
+  TextWindow.WriteLine("Insira sua senha de cadastro!")
+  Scar = TextWindow.ReadNumber()
+  
+  While Scar <> senha
+    TextWindow.WriteLine("senha incorreta , não foi possivel realizar a ação!tente novamente ." )
+    Scar = TextWindow.ReadNumber()
+  EndWhile
+  If senha = Scar Then
+    TextWindow.WriteLine("Ponto batido!")
+    TextWindow.WriteLine("ERICKSON LOPES DA SILVA")
+  EndIf
+EndSub
+For i= 1 To 100
+If hora >= 6 And hora <= 11 Then
+  TextWindow.WriteLine("Bom dia")
+ElseIf hora >= 12 and hora <= 19 then
+  TextWindow.WriteLine("Boa Tarde")  
+Else
+  TextWindow.WriteLine("Boa noite")
+EndIf
+
+
+If hora = 6 And min = 15 then
+ cartao()
+EndIf
+  EndFor

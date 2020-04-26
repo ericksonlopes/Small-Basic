@@ -1,0 +1,13 @@
+GraphicsWindow.MouseMove= quandoomousesemover
+Sub quandoomousesemover
+  x = GraphicsWindow.MouseX
+  y = GraphicsWindow.MouseY
+  If (Mouse.IsLeftButtonDown)Then
+    GraphicsWindow.BrushColor= "blue"
+    GraphicsWindow.FillEllipse(x,y,10,10)
+  EndIf
+  If (Mouse.IsRightButtonDown)Then
+    GraphicsWindow.BrushColor="white"
+    GraphicsWindow.FillRectangle(x,y,40,40)
+    EndIf
+  EndSub
